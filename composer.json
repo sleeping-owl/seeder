@@ -1,0 +1,28 @@
+{
+	"name": "sleeping-owl/seeder",
+	"description": "Package to create simple seeders with ability to lock/unlock tables",
+	"keywords": [
+		"laravel",
+		"eloquent",
+		"seeder",
+		"database"
+	],
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Sleeping Owl",
+			"email": "owl.sleeping@yahoo.com"
+		}
+	],
+	"require": {
+		"php": ">=5.4.0",
+		"illuminate/support": ">=4.1",
+		"fzaninotto/faker": "1.5.*@dev"
+	},
+	"autoload": {
+		"psr-0": {
+			"SleepingOwl\\Seeder": "src/"
+		}
+	},
+	"minimum-stability": "stable"
+}
