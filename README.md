@@ -75,8 +75,9 @@ And adds 2 new commands:
 
 ## Installation
 
- 1. Require this package in your composer.json and run composer update (or run `composer require sleeping-owl/seeder:1.x` directly):
+ 1. Require this packages in your composer.json and run composer update:
 
+		"fzaninotto/faker": "1.5.*@dev",
 		"sleeping-owl/seeder": "1.*"
 
  2. After composer update, add service providers to the `config/app.php`
