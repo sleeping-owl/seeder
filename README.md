@@ -16,9 +16,14 @@ class DatabaseSeeder extends Seeder
 
 	public function run()
 	{
-		SleepingOwlSeeder::setDefaultLocale('de_DE'); # set global locale (default is en_US)
-		SleepingOwlSeeder::setDefaultTimes(10); # set global entries count (default is 10)
-		SleepingOwlSeeder::truncateAll(); # truncate all tables before seeding (default is off)
+		 # set global locale (default is en_US)
+		SleepingOwlSeeder::setDefaultLocale('de_DE');
+		
+		 # set global entries count (default is 10)
+		SleepingOwlSeeder::setDefaultTimes(10);
+		
+		 # truncate all tables before seeding (default is off)
+		SleepingOwlSeeder::truncateAll();
 
 		# seed Country model
 		SleepingOwlSeeder::model(Country::class)
@@ -95,7 +100,7 @@ And add 2 new commands:
 	SleepingOwlSeeder::table('table')->…
 	# or
 	SleepingOwlSeeder::model(\App\MyModel::class)->…
-	``
+	```
 	
 3. Configure seeding rule (you can configure it globally, see details in "Global Configuration"):
 
