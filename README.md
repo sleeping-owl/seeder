@@ -67,7 +67,7 @@ class DatabaseSeeder extends Seeder
 }
 ```
 
-And add 2 new commands:
+And adds 2 new commands:
 
 1. `php artisan seeder:lock <table> --all` &mdash; lock table from any changes (table data will be saved and restored after reseeding).
 
